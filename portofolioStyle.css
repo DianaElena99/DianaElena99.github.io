@@ -1,0 +1,61 @@
+ol{
+    list-style-type: none;
+}
+
+body,html{
+    height: 100%;
+    color: lightslategray;
+    line-height: 1.8;
+}
+h1{
+    margin-top : 80px;
+    text-align: center;
+    text-decoration-color: teal;
+}
+
+h3{
+    text-align: center;
+}
+
+#about{
+    margin-top:470px;
+    margin-left:250px;
+    text-align: justify;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+#interests{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#projects{
+    margin-left:250px;
+}
+
+.descr-proj{
+    margin-top:30px;
+}
+
+@media screen and (max-width: 800px){
+    #about, #projects, #RESOURCES{
+        margin-left:0px;
+    }
+}
+.mainList{
+    margin-left:250px;
+}
+
+#first, #second, #third, #fourth, #Contact{
+    font-family: "Lato", sans-serif;
+    letter-spacing: 20px;
+}
+
+#content{
+    height: 100px;
+}
+
+a:hover{
+    color:teal;
+}
