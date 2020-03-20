@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head>
+<title>W3.CSS</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<style>
+  body{background-color: #98ACBE;}
+  #welcome{margin-top:50px; margin-left: 10px; padding-top: 15px;
+  padding-bottom: 15px; margin-bottom:50px; 
+  background-color: 98ACBE; color: teal; 
+  font-family: 'Kaushan Script', cursive; font-size: 35px;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(149, 199, 233), 0 0 5px rgb(84, 178, 221);
+  }
+
+</style>
+
+</head>
+
+<body >
+
+<div class="w3-sidebar w3-bar-block w3-black w3-card-4" style="width:130px">
+  <h5 class="w3-bar-item">Meniu</h5>
+  <button id="webBTN" class="w3-bar-item w3-button w3-border-bottom tablink" onclick="openPage(event, 'WEB')">WEB</button>
+  <button class="w3-bar-item w3-button w3-border-bottom tablink" onclick="openPage(event, 'Contact')">Contact</button>
+</div>
+
+<div style="margin-left:130px;">
+  <div class="w3-padding"> </div>
+
+  <div id = "welcome" class="w3-container w3-card-4"> Diana-Elena Pirvu <br> Anul 2, grupa 226/1 </div>
+
+<div id="home">  </div>
+
+  <div id="WEB" class="w3-container page" style="display:none">
+    <br>
+      <ul class="w3-ul w3-card-4" style=" background-color: white;">
+        <li><h3 style="font-family: 'Kaushan Script', cursive"><b>Programare WEB</b></h3></li>
+        <br>
+        <li><i class="fa fa-check-circle" style="color:teal;"></i>&ensp; <b>CSS</b>
+          <ol class="w3-ul tema">
+            <li> <i class="fa fa-paperclip"></i> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/Documentatie_CSS.docx"> Documentatie </a></li>
+<br>
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/1" target = "_blank"> Problema 1 </a></li>
+
+                       <li><a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/2/index_1.html" target = "_blank"> Problema 2 - varianta 1 </a>  
+
+                        <li><a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/2/index_2.html" target = "_blank"> Problema 2 - varianta 2 </a>
+
+ </li><br>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/3" target = "_blank"> Problema 3 </a></li>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/4" target = "_blank"> Problema 4 </a></li>
+
+<br>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/5/index_1.html" target = "_blank"> Problema 5 varianta 1 </a></li>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/5/index_2.html" target = "_blank"> Problema 5 varianta 2 </a></li>
+
+<br>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/6" target = "_blank"> Problema 6 </a></li>
+
+                       <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/7" target = "_blank"> Problema 7 </a></li>
+
+          </ol>
+
+        </li><br>
+        <li><i class="fa fa-check-circle" style="color:teal;"></i>&ensp; <b>HTML</b>
+
+          <ol class = "w3-ul tema">
+
+            <li> <a href="http://www.scs.ubbcluj.ro/~pdir2591/Lab1/Lab1_HTML4.html" target= "_blank">HTML 4 </a> </li>
+      
+            <li> <a href="http://www.scs.ubbcluj.ro/~pdir2591/Lab1/Lab1_HTML5.html" target = "_blank">HTML 5 </a> </li>
+      
+            </ol>	
+        </li>
+      </ul>
+    </p>
+
+  </div>  
+  
+
+  <div id="Contact" class="w3-container page" style="display:none; ;">
+  
+    <ul class = "w3-ul w3-card-4" style="background-color: white;">
+      <li>  <h3 style="font-family: 'Kaushan Script', cursive"><b>Contact</h3></b></li>
+  <li></li>
+      <li><i class="glyphicon glyphicon-envelope"></i> &emsp; Webmail : pdir2591@scs.ubbcluj.ro
+       </li>
+       <li><i class="glyphicon glyphicon-envelope"></i> &emsp; Gmail : elenapirvu99@gmail.com</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById("webBTN").click();
+function openPage(evt, pageName) {
+  var i, x, tablinks;
+
+    target = document.getElementById("home");
+    target.style.display = "none";
+
+
+  x = document.getElementsByClassName("page");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-teal", ""); 
+  }
+  document.getElementById(pageName).style.display = "block";
+  evt.currentTarget.className += " w3-teal";
+}
+</script>
+
+</body>
+</html>
