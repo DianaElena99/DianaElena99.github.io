@@ -3,290 +3,448 @@
 
 <html>
 
-<title></title>
+<head>
 
-<meta charset="UTF-8">
+<title>Pagina Personala</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="logo.PNG">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
-<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&amp;display=swap" rel="stylesheet">
+
+<style>
+
+body, html {
+
+  height: 100%;
+
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;  color: rgb(0, 0, 0);
+
+  font-size: 15px;
+
+}
+
+.bgimg-1, .bgimg-2 {
+
+  position: relative;
+
+  opacity: 0.65;
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+
+  background-image: url("img7.jpg");
+
+  min-height: 100%;
+
+}
+
+.bgimg-2{
+
+  background-image: url("img7.jpg");
+
+  height: 400px;
+
+}
+
+
+a{
+
+  color:white;
+
+}
 
 
 
-<!-- Navbar (sit on top) -->
+a:hover{
 
-<div class="w3-top">
+  color:rgb(131, 179, 211);
 
-  <div class="w3-bar w3-wide w3-padding w3-card" style="background-color:#001F3A; color:white;">
+  text-decoration: none;
 
-    <a href="#home" class="w3-bar-item w3-button"><b>Welcome</b> Home </a>
+}
 
-    <!-- Float links to the right. Hide them on small screens -->
 
-    <div class="w3-right w3-hide-small">
 
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+a:active{
 
-      <a href="#about" class="w3-bar-item w3-button">About</a>
+  color: white;
 
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+}
+
+
+.fa{
+
+  font-size: 30px;
+
+}
+
+
+.fa-angle-double-right{
+
+  font-size: 15px;
+
+}
+
+
+.caption {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 50%;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: #000;
+
+}
+
+
+
+.caption span.border {
+
+  background-color: rgb(0, 0, 0);
+
+  color: #fff;
+
+  padding: 18px;
+
+  font-size: 50px;
+
+  letter-spacing: 5px;
+
+}
+
+
+
+.fa-link{
+
+  font-size: 15px;
+
+}
+
+
+
+.row{
+
+  color:black;
+
+}
+
+
+
+h3 {
+
+  letter-spacing: 2px;
+
+  font-family: Arizonia;
+
+  font-size: 30px;
+
+  color: #111;
+
+}
+
+
+
+.col-sm-4, .col-md-3{
+
+  background-color: rgb(113, 154, 190);
+
+  padding-left:15px;
+
+  padding-right: 15px;
+
+  padding-top: 15px;
+
+  padding-bottom: 15px;
+
+  margin: 10px 10px 10px 10px;
+
+  box-shadow: 3px 2px 3px 2px #e0dfdf;
+
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+
+  $(document).ready(function(){
+
+  
+
+    $('[data-toggle="tooltip"]').tooltip(); 
+
+
+
+    $(".navbar a, footer a[href='#page'], .arrow").on('click', function(event) {
+
+
+
+      if (this.hash !== "") {
+
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+
+          scrollTop: $(hash).offset().top,
+
+        }, 900, function(){
+
+          window.location.hash = hash;
+
+        });
+
+      } // End if
+
+    });
+
+  })
+
+  
+
+  </script>
+
+</head>
+
+<body id="page" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px;">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" ">
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>                        
+
+      </button>
+
+      <a class="navbar-brand" href="#titlu">Home</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav">
+
+        
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+        <li class="dropdown">
+
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Work <span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+
+            <li><a href="#web">Web Programming</a></li>
+
+           
+
+          </ul>
+
+        </li>
+
+        
+
+      </ul>
+
+      
 
     </div>
 
   </div>
 
+</nav>
+
+
+
+<div id="titlu" class="bgimg-1">
+
+  <div  class="caption">
+
+  <span class="border" style="font-family: Arizonia;">Diana-Elena Pîrvu </span> <br> <a class="arrow" href="#about"><i class="fa fa-angle-double-down"></i> </a>
+
+  </div>
+
 </div>
 
 
 
-<!-- Header -->
+<div id="about" style="color:black;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
 
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <h3 style="text-align:center; color:black;">About Me</h3><br>
 
-  <img class="w3-image" src="https://raw.githubusercontent.com/DianaElena99/DianaElena99.github.io/master/img7.jpg" alt="Background" width="1500" height="600">
+  <p><ul class="w3-ul"><li>Student at Babeș-Bolyai University, Cluj-Napoca</li>
 
-  <div class="w3-display-middle w3-margin-top w3-center">
+    <li>2nd Year <i class="fa fa-angle-double-right"></i> 3rd Year, pursuing a Bachelor's Degree in Computer Science</li> <br><br>
 
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Diana-Elena Pîrvu</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+    <li><b>Interests </b>
 
-  </div>
+      <ul class="w3-ul">
 
-</header>
+        <div class="row">
+
+          <div class="col-sm-5"> <li>Web Programming & Design</li> </div>
+
+          <div class="col-sm-5"> <li>Cryptography</li></div> 
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+          <div class="col-sm-5"> <li>Machine Learning & Deep Learning</li></div>
+
+          <div class="col-sm-5"> <li>Databases(MySQL, MongoDB)</li></div> 
+
+        </div> <hr>
+
+        <div class="row">
+
+          <div class="col-sm-5"><li>Blockchain</li></div>
+
+        </div>
+
+      </ul>
+
+</li>
+
+      <br>
 
 
 
-<!-- Page content -->
+  <li>
 
-<div class="w3-content w3-padding" style="max-width:1564px">
+      <div class="row">
 
+       <div class="col-sm-5"><a href="https://github.com/DianaElena99" target="_blank" style="color:black;"><i class="fa fa-link"></i>&ensp; GitHub Profile</a></div>
 
+       <div class="col-sm-5"><a href="cv.pdf" target="_blank" style="color:black;"><i class="fa fa-link"></i> &ensp; CV</a></div>
 
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" id="about">About</h3>
+      </div>
 
-  <div class="w3-container w3-padding-8" >
+ 
 
-    <ul class = "w3-ul w3-card-4" style="background-color: white;">
+  </li>
 
-      <li>Universitatea Babeș Bolyai <br><br>Informatică Română <br><br>grupa 226/1<br><br></li>
+  </ul></p>
 
-    </ul>
+</div>
 
-  </div>
-
-
-
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-
-<div id ="projects">  
-
-  <ul class="w3-ul w3-card-4" style=" background-color: white;">
-
-    <li><h3 ><b>Programare WEB</b></h3></li>
+  
 
     <br>
 
-    <li><i class="fa fa-check-circle" style="color:#0C7EE5;"></i>&ensp; <b>JavaScript</b>
-
-
-
-      <ol class="w3-ul tema">
-
-
-
-<li> <i class="fa fa-paperclip"></i> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/LabJS/documentatie-js.docx"> Documentatie </a></li>
-
-
-
-<br>
-
-
-
-        <li><a href ="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/1" target="_blank">Problema 1</a></li>
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/2" target="_blank">Problema 2</a></li>
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/3/v1" target="_blank">Problema 3 - varianta 1</a></li>
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/3" target="_blank">Problema 3 - varianta 2</a></li>
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/4/index.html" target="_blank">Problema 4 - varianta 1</a></li> 
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/4/index2.html" target="_blank">Problema 4 - varianta 2</a></li>   
-
-
-
-        <li><a href="http://www.scs.ubbcluj.ro/~pdir2591/LabJS/5" target="_blank">Problema 5</a></li>
-
-
-
-
-
-
-
-</ol>
-
-
-
-      </li>
-
-    <li><i class="fa fa-check-circle" style="color:#0C7EE5;"></i>&ensp; <b>CSS</b>
-
-      <ol class="w3-ul tema">
-
-        <li> <i class="fa fa-paperclip"></i> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/Documentatie_CSS.docx"> Documentatie </a></li>
-
-<br>
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/1" target = "_blank"> Problema 1 </a></li>
-
-
-
-                   <li><a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/2/index_1.html" target = "_blank"> Problema 2 - varianta 1 </a>  
-
-
-
-                    <li><a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/2/index_2.html" target = "_blank"> Problema 2 - varianta 2 </a>
-
-
-
-</li><br>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/3" target = "_blank"> Problema 3 </a></li>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/4" target = "_blank"> Problema 4 </a></li>
-
-
-
-<br>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/5/index_1.html" target = "_blank"> Problema 5 varianta 1 </a></li>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/5/index_2.html" target = "_blank"> Problema 5 varianta 2 </a></li>
-
-
-
-<br>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/6" target = "_blank"> Problema 6 </a></li>
-
-
-
-                   <li> <a href = "http://www.scs.ubbcluj.ro/~pdir2591/Lab2/7" target = "_blank"> Problema 7 </a></li>
-
-
-
-      </ol>
-
-
-
-    </li><br>
-
-    <li><i class="fa fa-check-circle" style="color:#0C7EE5;"></i>&ensp; <b>HTML</b>
-
-
-
-      <ol class = "w3-ul tema">
-
-
-
-        <li> <a href="http://www.scs.ubbcluj.ro/~pdir2591/Lab1/Lab1_HTML4.html" target= "_blank">HTML 4 </a> </li>
-
-  
-
-        <li> <a href="http://www.scs.ubbcluj.ro/~pdir2591/Lab1/Lab1_HTML5.html" target = "_blank">HTML 5 </a> </li>
-
-  
-
-        </ol>	
-
-    </li>
-
-  </ul>
+    </div>
 
 </div>
 
 
 
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+<div class="bgimg-2">
 
-  <div class="w3-container w3-padding-8" id="contact">
+  <div id="contact" class="caption">
 
-    <ul class = "w3-ul w3-card-4" style="background-color: white;">
-
-
-
-      <li><i class="glyphicon glyphicon-envelope"></i> &emsp; Webmail : pdir2591@scs.ubbcluj.ro
-
-       </li>
-
-       <li><i class="glyphicon glyphicon-envelope"></i> &emsp; Gmail : elenapirvu99@gmail.com</li>
-
-    </ul>
+  <span class="border" style="background-color:transparent;font-size:50px; font-family: Arizonia, sans-serif; color: #f7f7f7;">Contact</span>
 
   </div>
 
-  
+</div>
 
-<!-- End page content -->
+
+
+<div  style="position:relative;">
+
+  <div style="background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+
+  <div class="row" style="color:white;">
+
+    <div class="col-sm-4">
+
+      <p>Personal mail: elenapirvu99@gmail.com</p>
+
+    </div>
+
+    <div class="col-sm-4">
+
+      <p>Student mail: pdir2591@scs.ubbcluj.ro</p>
+
+    </div>
+
+  </div>
+
+  </div>
 
 </div>
 
 
 
-<br><br>
-
-<!-- Footer -->
-
-<footer class="w3-center w3-padding-16" style="background-color:#001F3A; color:white;">
-
-<br>
-
-	&copy; Diana-Elena Pîrvu, 2020-04-17
-
-<br>
-
-</footer>
+<div >
 
 
+
+  <div class="w3-card-4" style="text-align: center;padding-top: 100px; height:250px;color:white;background-color:rgb(32, 47, 65);">&copy; Diana-Elena Pîrvu &ensp; 2020-05-31 </div>
+
+
+
+</div>
 
 
 
 </body>
 
-</html>
+</html>		
